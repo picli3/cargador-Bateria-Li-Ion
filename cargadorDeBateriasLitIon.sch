@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Cargador de Baterias Litio"
+Date "2020-09-01"
+Rev "V 1.0.0"
+Comp "maykolrey.com"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -128,11 +128,11 @@ Wire Wire Line
 	8450 3100 8450 3650
 Connection ~ 8450 3650
 Wire Wire Line
-	8450 3650 8700 3650
+	8450 3650 8800 3650
 Text Label 8700 3650 2    50   ~ 0
 B+
 Wire Wire Line
-	8450 3100 8700 3100
+	8450 3100 8800 3100
 Text Label 8700 3100 2    50   ~ 0
 OUT+
 Text Label 8700 4600 2    50   ~ 0
@@ -236,7 +236,7 @@ F 4 "C0603C104M4RACTU" H 8450 3900 50  0001 C CNN "Mfg Part #"
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	7700 4600 8700 4600
+	7700 4600 8800 4600
 Wire Wire Line
 	5300 3900 5300 4000
 $Comp
@@ -289,8 +289,6 @@ F 3 "" H 3400 3600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3400 3600 3400 3500
-Wire Wire Line
-	3400 3100 3150 3100
 Connection ~ 3400 3100
 Text Label 3150 3100 0    50   ~ 0
 IN+
@@ -310,4 +308,102 @@ F 4 "2N7002" H 7000 4500 50  0001 C CNN "Mfg Part #"
 	1    7000 4500
 	0    -1   1    0   
 $EndComp
+$Comp
+L Connector:Conn_01x01_Female J1
+U 1 1 5F4DAD06
+P 2850 3100
+F 0 "J1" H 2742 2875 50  0000 C CNN
+F 1 "IN+" H 2742 2966 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm" H 2850 3100 50  0001 C CNN
+F 3 "~" H 2850 3100 50  0001 C CNN
+	1    2850 3100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3050 3100 3400 3100
+$Comp
+L Connector:Conn_01x01_Female J3
+U 1 1 5F4DC6C5
+P 9000 3100
+F 0 "J3" H 9028 3126 50  0000 L CNN
+F 1 "OUT+" H 9028 3035 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm" H 9000 3100 50  0001 C CNN
+F 3 "~" H 9000 3100 50  0001 C CNN
+	1    9000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J4
+U 1 1 5F4DE4D2
+P 9000 3650
+F 0 "J4" H 9028 3676 50  0000 L CNN
+F 1 "B+" H 9028 3585 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm" H 9000 3650 50  0001 C CNN
+F 3 "~" H 9000 3650 50  0001 C CNN
+	1    9000 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J5
+U 1 1 5F4DF38D
+P 9000 4600
+F 0 "J5" H 9028 4626 50  0000 L CNN
+F 1 "B-" H 9028 4535 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm" H 9000 4600 50  0001 C CNN
+F 3 "~" H 9000 4600 50  0001 C CNN
+	1    9000 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J6
+U 1 1 5F4E06D9
+P 9000 4900
+F 0 "J6" H 9028 4926 50  0000 L CNN
+F 1 "OUT-" H 9028 4835 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm" H 9000 4900 50  0001 C CNN
+F 3 "~" H 9000 4900 50  0001 C CNN
+	1    9000 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5F4E0EDC
+P 8450 5100
+F 0 "#PWR02" H 8450 4850 50  0001 C CNN
+F 1 "GND" H 8455 4927 50  0000 C CNN
+F 2 "" H 8450 5100 50  0001 C CNN
+F 3 "" H 8450 5100 50  0001 C CNN
+	1    8450 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 5100 8450 4900
+Wire Wire Line
+	8450 4900 8800 4900
+$Comp
+L Connector:Conn_01x01_Female J2
+U 1 1 5F4E3B16
+P 2850 4900
+F 0 "J2" H 2742 5085 50  0000 C CNN
+F 1 "IN-" H 2742 4994 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm" H 2850 4900 50  0001 C CNN
+F 3 "~" H 2850 4900 50  0001 C CNN
+	1    2850 4900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5F4E3B1C
+P 3400 5100
+F 0 "#PWR01" H 3400 4850 50  0001 C CNN
+F 1 "GND" H 3405 4927 50  0000 C CNN
+F 2 "" H 3400 5100 50  0001 C CNN
+F 3 "" H 3400 5100 50  0001 C CNN
+	1    3400 5100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 5100 3400 4900
+Wire Wire Line
+	3400 4900 3050 4900
 $EndSCHEMATC
