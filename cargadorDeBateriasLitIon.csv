@@ -1,11 +1,17 @@
-Item,Reference(s),Description,Qty,Manufacturer,Mfg Part #,Package,Type,Value
-1,"C1, C2",,2,,CC0603ZRY5V5BB475,C_0603_1608Metric,,4.7uF
-2,"C3, C4",,2,,C0603C104M4RACTU,C_0603_1608Metric,,100nF
-3,D1,,1,,SML-D12U1WT86,LED_0603_1608Metric,,STAT
-4,"Q1, Q2",,2,,2N7002,SOT-23,,2N7002
-5,R1,,1,,RC0603JR-07470RL,R_0603_1608Metric,,470
-6,R2,,1,,RMCF0603JT2K00,R_0603_1608Metric,,2K
-7,R3,,1,,RMCF0603JT2K70,R_0603_1608Metric,,2.7K
-8,R4,,1,,CR0603-JW-331ELF,R_0603_1608Metric,,330
-9,U1,,1,,MCP73831T-2ACI/OT,SOT-23-5,,MCP73831-2
-10,U2,,1,,AP9101CAK-AKTRG1,SOT25,,AP9101C
+"Item","Reference(s)","Description","Qty","Manufacturer","Mfg Part #","Package","Type","Value"
+"1","C1, C2","","2","","CC0603ZRY5V5BB475","C_0603_1608Metric","","4.7uF"
+"2","C3, C4","","2","","C0603C104M4RACTU","C_0603_1608Metric","","100nF"
+"3","D1","","1","","SML-D12U1WT86","LED_0603_1608Metric","","STAT"
+"4","J1","","1","","","TestPoint_THTPad_1.5x1.5mm_Drill0.7mm","","IN+"
+"5","J2","","1","","","TestPoint_THTPad_1.5x1.5mm_Drill0.7mm","","IN-"
+"6","J3","","1","","","TestPoint_THTPad_1.5x1.5mm_Drill0.7mm","","OUT+"
+"7","J4","","1","","","TestPoint_THTPad_1.5x1.5mm_Drill0.7mm","","B+"
+"8","J5","","1","","","TestPoint_THTPad_1.5x1.5mm_Drill0.7mm","","B-"
+"9","J6","","1","","","TestPoint_THTPad_1.5x1.5mm_Drill0.7mm","","OUT-"
+"10","Q1","","1","","","SuperSOT-6","","FDC6401N"
+"11","R1","","1","","RC0603JR-07470RL","R_0603_1608Metric","","470"
+"12","R2","","1","","RMCF0603JT2K00","R_0603_1608Metric","","2K"
+"13","R3","","1","","RMCF0603JT2K70","R_0603_1608Metric","","2.7K"
+"14","R4","","1","","CR0603-JW-331ELF","R_0603_1608Metric","","330"
+"15","U1","","1","","MCP73831T-2ACI/OT","SOT-23-5","","MCP73831"
+"16","U2","","1","","AP9101CK6-ADTRG1","SOT26","","AP9101CK6"
