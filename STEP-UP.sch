@@ -1,0 +1,213 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MSS_SourceSwitch:MIC2251 U?
+U 1 1 5FB39CA8
+P 5200 3700
+AR Path="/5FB39CA8" Ref="U?"  Part="1" 
+AR Path="/5FB37943/5FB39CA8" Ref="U3"  Part="1" 
+F 0 "U3" H 5200 4125 50  0000 C CNN
+F 1 "MIC2251" H 5200 4034 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 4900 4000 50  0001 C CNN
+F 3 "https://www.mouser.pe/datasheet/2/268/mic2251-1082660.pdf" H 4900 4000 50  0001 C CNN
+F 4 "MIC2251-1YD5-TR" H 5200 4033 50  0001 C CNN "Mfg Part #"
+	1    5200 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FB39CAE
+P 4550 3950
+AR Path="/5FB39CAE" Ref="C?"  Part="1" 
+AR Path="/5FB37943/5FB39CAE" Ref="C4"  Part="1" 
+F 0 "C4" H 4665 3996 50  0000 L CNN
+F 1 "10uF" H 4665 3905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4588 3800 50  0001 C CNN
+F 3 "~" H 4550 3950 50  0001 C CNN
+	1    4550 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L_Core_Ferrite L?
+U 1 1 5FB39CB4
+P 5200 3150
+AR Path="/5FB39CB4" Ref="L?"  Part="1" 
+AR Path="/5FB37943/5FB39CB4" Ref="L1"  Part="1" 
+F 0 "L1" V 5425 3150 50  0000 C CNN
+F 1 "10uH" V 5334 3150 50  0000 C CNN
+F 2 "MSS_Devices:L_Bourns_SDR0403" H 5200 3150 50  0001 C CNN
+F 3 "~" H 5200 3150 50  0001 C CNN
+	1    5200 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Schottky_ALT D?
+U 1 1 5FB39CBA
+P 6000 3500
+AR Path="/5FB39CBA" Ref="D?"  Part="1" 
+AR Path="/5FB37943/5FB39CBA" Ref="D2"  Part="1" 
+F 0 "D2" H 6000 3283 50  0000 C CNN
+F 1 "SM5819PL-TP" H 6000 3374 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123F" H 6000 3500 50  0001 C CNN
+F 3 "~" H 6000 3500 50  0001 C CNN
+F 4 "SM5819PL-TP" H 6000 3375 50  0001 C CNN "Mfg Part #"
+	1    6000 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FB39CC0
+P 6750 3950
+AR Path="/5FB39CC0" Ref="C?"  Part="1" 
+AR Path="/5FB37943/5FB39CC0" Ref="C5"  Part="1" 
+F 0 "C5" H 6865 3996 50  0000 L CNN
+F 1 "4.7nF" H 6865 3905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6788 3800 50  0001 C CNN
+F 3 "~" H 6750 3950 50  0001 C CNN
+	1    6750 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FB39CC7
+P 6250 3750
+AR Path="/5FB39CC7" Ref="R?"  Part="1" 
+AR Path="/5FB37943/5FB39CC7" Ref="R5"  Part="1" 
+F 0 "R5" H 6180 3796 50  0000 R CNN
+F 1 "100K" H 6180 3705 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6180 3750 50  0001 C CNN
+F 3 "~" H 6250 3750 50  0001 C CNN
+	1    6250 3750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FB39CCE
+P 6250 4150
+AR Path="/5FB39CCE" Ref="R?"  Part="1" 
+AR Path="/5FB37943/5FB39CCE" Ref="R6"  Part="1" 
+F 0 "R6" H 6180 4196 50  0000 R CNN
+F 1 "33K" H 6180 4105 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6180 4150 50  0001 C CNN
+F 3 "~" H 6250 4150 50  0001 C CNN
+	1    6250 4150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 3500 5700 3500
+Wire Wire Line
+	6250 3600 6250 3500
+Wire Wire Line
+	6250 3500 6150 3500
+Wire Wire Line
+	6250 3900 6250 3950
+Wire Wire Line
+	5600 3850 6050 3850
+Wire Wire Line
+	6050 3850 6050 3950
+Wire Wire Line
+	6050 3950 6250 3950
+Connection ~ 6250 3950
+Wire Wire Line
+	6250 3950 6250 4000
+$Comp
+L power:GND #PWR05
+U 1 1 5FB3CD0A
+P 6250 4350
+F 0 "#PWR05" H 6250 4100 50  0001 C CNN
+F 1 "GND" H 6255 4177 50  0000 C CNN
+F 2 "" H 6250 4350 50  0001 C CNN
+F 3 "" H 6250 4350 50  0001 C CNN
+	1    6250 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 4350 6250 4300
+$Comp
+L power:GND #PWR04
+U 1 1 5FB3D34F
+P 5200 4350
+F 0 "#PWR04" H 5200 4100 50  0001 C CNN
+F 1 "GND" H 5205 4177 50  0000 C CNN
+F 2 "" H 5200 4350 50  0001 C CNN
+F 3 "" H 5200 4350 50  0001 C CNN
+	1    5200 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4350 5200 4050
+Wire Wire Line
+	6750 3800 6750 3500
+Wire Wire Line
+	6750 3500 6250 3500
+Connection ~ 6250 3500
+$Comp
+L power:GND #PWR06
+U 1 1 5FB3E2AE
+P 6750 4350
+F 0 "#PWR06" H 6750 4100 50  0001 C CNN
+F 1 "GND" H 6755 4177 50  0000 C CNN
+F 2 "" H 6750 4350 50  0001 C CNN
+F 3 "" H 6750 4350 50  0001 C CNN
+	1    6750 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 4350 6750 4100
+Wire Wire Line
+	4550 3800 4550 3650
+Wire Wire Line
+	4550 3500 4800 3500
+$Comp
+L power:GND #PWR03
+U 1 1 5FB3F256
+P 4550 4350
+F 0 "#PWR03" H 4550 4100 50  0001 C CNN
+F 1 "GND" H 4555 4177 50  0000 C CNN
+F 2 "" H 4550 4350 50  0001 C CNN
+F 3 "" H 4550 4350 50  0001 C CNN
+	1    4550 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 4350 4550 4100
+Wire Wire Line
+	5350 3150 5700 3150
+Wire Wire Line
+	5700 3150 5700 3500
+Connection ~ 5700 3500
+Wire Wire Line
+	5700 3500 5600 3500
+Wire Wire Line
+	5050 3150 4550 3150
+Wire Wire Line
+	4550 3150 4550 3500
+Connection ~ 4550 3500
+Wire Wire Line
+	4800 3650 4550 3650
+Connection ~ 4550 3650
+Wire Wire Line
+	4550 3650 4550 3500
+Text HLabel 4350 3500 0    50   Input ~ 0
+VIN
+Wire Wire Line
+	4350 3500 4550 3500
+Text HLabel 6900 3500 2    50   Output ~ 0
+VOUT
+Wire Wire Line
+	6900 3500 6750 3500
+Connection ~ 6750 3500
+$EndSCHEMATC
