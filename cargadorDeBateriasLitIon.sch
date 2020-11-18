@@ -26,7 +26,7 @@ F 4 "MCP73831T-2ACI/OT" H 3100 3000 50  0001 C CNN "Mfg Part #"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mss_devices:AP9101C U2
+L Mss_devices:AP9101C_SOT-26 U2
 U 1 1 5F4AB55B
 P 5250 3550
 F 0 "U2" H 5250 4050 50  0000 C CNN
