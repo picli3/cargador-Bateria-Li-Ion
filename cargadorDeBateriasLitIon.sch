@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Battery_Management:MCP73831-2-OT U1
+L cargadorDeBateriasLitIon-rescue:MCP73831-2-OT-Battery_Management U1
 U 1 1 5F4A97F6
 P 3100 3000
 F 0 "U1" H 2656 3046 50  0000 R CNN
@@ -26,7 +26,7 @@ F 4 "MCP73831T-2ACI/OT" H 3100 3000 50  0001 C CNN "Mfg Part #"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mss_devices:AP9101C_SOT-26 U2
+L cargadorDeBateriasLitIon-rescue:AP9101C_SOT-26-Mss_devices U2
 U 1 1 5F4AB55B
 P 5250 3550
 F 0 "U2" H 5250 4050 50  0000 C CNN
@@ -304,7 +304,7 @@ Wire Wire Line
 Wire Wire Line
 	2000 3700 1650 3700
 $Comp
-L MSS_Transistor:FDC6401N Q1
+L cargadorDeBateriasLitIon-rescue:FDC6401N-MSS_Transistor Q1
 U 2 1 5F52AED7
 P 5500 4450
 F 0 "Q1" V 5749 4450 50  0000 C CNN
@@ -316,7 +316,7 @@ F 4 "FDC6401N" H 5500 4450 50  0001 C CNN "Mfg Part #"
 	0    -1   1    0   
 $EndComp
 $Comp
-L MSS_Transistor:FDC6401N Q1
+L cargadorDeBateriasLitIon-rescue:FDC6401N-MSS_Transistor Q1
 U 1 1 5F52C56E
 P 5000 4450
 F 0 "Q1" V 5249 4450 50  0000 C CNN

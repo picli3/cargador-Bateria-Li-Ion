@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MSS_SourceSwitch:MIC2251 U?
+L cargadorDeBateriasLitIon-rescue:MIC2251-MSS_SourceSwitch U?
 U 1 1 5FB39CA8
 P 5200 3700
 AR Path="/5FB39CA8" Ref="U?"  Part="1" 

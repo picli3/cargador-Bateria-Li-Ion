@@ -1,3 +1,13 @@
 *bak
 fp-info-cache
 *bck
+*.rar
+*.zip
+*.step
+*.xml
+*.csv
+./*-backups
+*auto_saved_files#
+*rescue*
+*.sldprt
+*.SLDASM
